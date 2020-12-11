@@ -28,7 +28,7 @@ please install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 $ heroku create $YOUR_APP_NAME
 # check git remote 
 $ git remote -v
-#your should see something like below
+#you should see something like below
 heroku  https://git.heroku.com/$YOUR_APP_NAME.git (fetch)
 heroku  https://git.heroku.com/$YOUR_APP_NAME.git (push)
 ```
