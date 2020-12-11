@@ -12,16 +12,15 @@ You'll need:
 
 ## Deployment 📦
 
-If you have Heroku Account Skip to Step 4
-### Step 1 - Heroku Account
+### Step 1 - Create Heroku Account
 
 Create a account in Heroku
 
-### Step 2 - Heroku CLI
+### Step 2 - Install Heroku CLI
 
-install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+please install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
-### Step 3 - Create Heroku App
+### Step 3 - Create Heroku App using Heroku CLI
 
 ```bash
 # create a Heroku App
@@ -33,7 +32,7 @@ heroku  https://git.heroku.com/$yourAppName.git (fetch)
 heroku  https://git.heroku.com/$yourAppName.git (push)
 ```
 
-### Step 4 - Change your hompage to your heroku app domain in  package.json
+### Step 4 - Change your hompage to your heroku app domain in package.json
 ```json
 "homepage":https://$yourAppName.herokuapp.com/
 ```
@@ -44,5 +43,11 @@ heroku  https://git.heroku.com/$yourAppName.git (push)
 $ cd $yourAppName
 # commit your changes to Heroku
 $ git push heroku master
+```
+
+### Step 6 - See your App
+```bash
+# See your app
+$ heroku open
 ```
 
