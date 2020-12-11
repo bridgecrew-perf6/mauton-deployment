@@ -5,6 +5,7 @@ Describe the procedures of deployment to Heruko.
 
 ## Prerequisites 📋
 You'll need:
+* [mauton-api](https://git-scm.com) 
 * [Git](https://git-scm.com) 
 * [NPM](http://npmjs.com)
 * [Google reCAPTCHA v3](https://developers.google.com/recaptcha/docs/v3) (which you need to register for a key)
@@ -38,12 +39,20 @@ export const RECAPTCHAT_KEY = 'your public key';
 ```
 **NOTE**: Remember to add your domain (eg. ```$yourAppName.herokuapp.com``` ) in [Google reCAPTCHA v3 setting](https://developers.google.com/recaptcha/docs/settings).
 
-### Step 5 - Change your hompage to your heroku app domain in ```package.json```
+### Step 5 - Change your API port in ```src/constants.js```
+
+**NOTE**: you need to set up your [mauton-api](https://developers.google.com/recaptcha/docs/settings) first.
+
+```js
+export const API_PORT = 'https://$yourAppName.herokuapp.com';
+```
+
+### Step 6 - Change your hompage to your heroku app domain in ```package.json```
 ```json
 "homepage":https://$yourAppName.herokuapp.com/
 ```
 
-### Step 6 - Commit your changes to your App
+### Step 7 - Commit your changes to your App
 ```bash
 # Go into the repository
 $ cd $yourAppName
@@ -53,7 +62,7 @@ $ git commit -m "heroku setup"
 $ git push heroku master
 ```
 
-### Step 7 - Finished!!! See your App
+### Step 8 - Finished!!! See your App
 ```bash
 # See your app
 $ heroku open
