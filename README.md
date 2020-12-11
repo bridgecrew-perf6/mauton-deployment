@@ -25,37 +25,37 @@ please install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
 ```bash
 # create a Heroku App
-$ heroku create $yourAppName
+$ heroku create $YOUR_APP_NAME
 # check git remote 
 $ git remote -v
 #your should see something like below
-heroku  https://git.heroku.com/$yourAppName.git (fetch)
-heroku  https://git.heroku.com/$yourAppName.git (push)
+heroku  https://git.heroku.com/$YOUR_APP_NAME.git (fetch)
+heroku  https://git.heroku.com/$YOUR_APP_NAME.git (push)
 ```
 
 ### Step 4 - Change your Google reCAPTCHA v3 public Key in ```src/constants.js```
 ```js
 export const RECAPTCHAT_KEY = 'your public key';
 ```
-**NOTE**: Remember to add your domain (eg. ```$yourAppName.herokuapp.com``` ) in [Google reCAPTCHA v3 setting](https://developers.google.com/recaptcha/docs/settings).
+**NOTE**: Remember to add your domain (eg. ```$YOUR_APP_NAME.herokuapp.com``` ) in [Google reCAPTCHA v3 setting](https://developers.google.com/recaptcha/docs/settings).
 
 ### Step 5 - Change your API port in ```src/constants.js```
 
 **NOTE**: you need to set up your [mauton-api](https://github.com/ikhvjs/mauton-api) first.
 
 ```js
-export const API_PORT = 'https://$yourAppName.herokuapp.com';
+export const API_PORT = 'https://$YOUR_APP_NAME.herokuapp.com';
 ```
 
 ### Step 6 - Change your hompage to your heroku app domain in ```package.json```
 ```json
-"homepage":https://$yourAppName.herokuapp.com/
+"homepage":https://$YOUR_APP_NAME.herokuapp.com/
 ```
 
 ### Step 7 - Commit your changes to your App
 ```bash
-# Go into the repository
-$ cd $yourAppName
+# Go into your mauton clone repository
+$ cd mauton
 $ git add .
 $ git commit -m "heroku setup"
 # push your changes to Heroku
