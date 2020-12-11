@@ -68,3 +68,5 @@ $ git push heroku master
 $ heroku open
 ```
 
+## Acknowledgments 🎁
+[Create React App Deployment](https://create-react-app.dev/docs/deployment/)
