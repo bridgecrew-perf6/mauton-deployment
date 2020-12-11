@@ -25,7 +25,7 @@ please install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
 ```bash
 # create a Heroku App
-$ heroku create $YOUR_APP_NAME
+$ heroku create $YOUR_APP_NAME -buildpack mars/create-react-app
 # check git remote 
 $ git remote -v
 #you should see something like below
