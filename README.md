@@ -5,7 +5,7 @@ Describe the procedures of deployment to Heruko.
 
 ## Prerequisites 📋
 You'll need:
-* [mauton-api](https://git-scm.com) 
+* [mauton-api](https://github.com/ikhvjs/mauton-api) 
 * [Git](https://git-scm.com) 
 * [NPM](http://npmjs.com)
 * [Google reCAPTCHA v3](https://developers.google.com/recaptcha/docs/v3) (which you need to register for a key)
@@ -41,7 +41,7 @@ export const RECAPTCHAT_KEY = 'your public key';
 
 ### Step 5 - Change your API port in ```src/constants.js```
 
-**NOTE**: you need to set up your [mauton-api](https://developers.google.com/recaptcha/docs/settings) first.
+**NOTE**: you need to set up your [mauton-api](https://github.com/ikhvjs/mauton-api) first.
 
 ```js
 export const API_PORT = 'https://$yourAppName.herokuapp.com';
