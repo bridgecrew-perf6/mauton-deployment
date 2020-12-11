@@ -27,25 +27,33 @@ please install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 $ heroku create $yourAppName
 # check git remote 
 $ git remote -v
-#your should see something like
+#your should see something like below
 heroku  https://git.heroku.com/$yourAppName.git (fetch)
 heroku  https://git.heroku.com/$yourAppName.git (push)
 ```
 
-### Step 4 - Change your hompage to your heroku app domain in package.json
+### Step 4 - Change your Google reCAPTCHA v3 public Key in ```src/constants.js```
+```js
+export const RECAPTCHAT_KEY = 'your public key';
+```
+**NOTE**: Remember to add your domain (eg. ```$yourAppName.herokuapp.com``` ) in [Google reCAPTCHA v3 setting](https://developers.google.com/recaptcha/docs/settings).
+
+### Step 5 - Change your hompage to your heroku app domain in ```package.json```
 ```json
 "homepage":https://$yourAppName.herokuapp.com/
 ```
 
-### Step 5 - Commit your changes to your App
+### Step 6 - Commit your changes to your App
 ```bash
 # Go into the repository
 $ cd $yourAppName
-# commit your changes to Heroku
+$ git add .
+$ git commit -m "heroku setup"
+# push your changes to Heroku
 $ git push heroku master
 ```
 
-### Step 6 - See your App
+### Step 7 - Finished!!! See your App
 ```bash
 # See your app
 $ heroku open
