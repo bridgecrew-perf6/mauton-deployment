@@ -1,7 +1,7 @@
 # mauton-deployment :cat:
 
 ## Purpose
-Describe the procedures of deployment to Heruko.
+Describe the procedures of deployment of [Mauton](https://github.com/ikhvjs/mauton) to Heruko.
 
 ## Prerequisites 📋
 You'll need:
